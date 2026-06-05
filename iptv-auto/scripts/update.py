@@ -134,21 +134,43 @@ def parse_iptv_text(text, source_name=""):
 
 def validate_url(url, timeout=8):
     """
-    Quick check if a stream URL is alive.
-    Uses HTTP HEAD or partial GET to verify.
+    Validate if a stream URL is playable.
+    Checks: HTTP response + content type + actual data.
+    For m3u8: verifies valid playlist content.
+    For direct streams: verifies video/audio content type.
     """
     try:
         req = urllib.request.Request(url, method="GET", headers={
             "User-Agent": "Mozilla/5.0",
-            "Range": "bytes=0-1024"
+            "Range": "bytes=0-2048"
         })
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             status = resp.status
-            if status in (200, 206, 301, 302):
-                # Read a small chunk to confirm data flows
-                data = resp.read(512)
-                if len(data) > 0:
+            if status not in (200, 206, 301, 302):
+                return False
+
+            data = resp.read(2048)
+            if len(data) < 16:
+                return False
+
+            content_type = resp.headers.get("Content-Type", "").lower()
+
+            # m3u8 playlist check
+            if ".m3u8" in url.lower() or "mpegurl" in content_type:
+                text = data.decode("utf-8", errors="replace")
+                if "#EXTM3U" in text or "#EXTINF" in text:
                     return True
+                return False
+
+            # Direct stream: accept video/audio content types
+            if any(t in content_type for t in ["video", "audio", "octet-stream", "mpegts"]):
+                return True
+
+            # If content type is generic but we got enough data, accept it
+            if len(data) >= 512:
+                return True
+
+            return False
     except (urllib.error.HTTPError, urllib.error.URLError, socket.timeout, OSError):
         pass
     except Exception:
