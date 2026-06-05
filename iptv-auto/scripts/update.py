@@ -19,7 +19,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 SCRIPT_DIR = Path(__file__).parent
-PROJECT_ROOT = SCRIPT_DIR.parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent  # repo root
 SOURCES_FILE = SCRIPT_DIR / "sources.json"
 TV_DIR = PROJECT_ROOT / "tv"
 DOCS_DIR = PROJECT_ROOT / "docs"
@@ -407,6 +407,12 @@ def main():
     generate_m3u(ipv4_cat, TV_DIR / "iptv4.m3u", "IPTV4")
     generate_txt(ipv6_cat, TV_DIR / "iptv6.txt")
     generate_m3u(ipv6_cat, TV_DIR / "iptv6.m3u", "IPTV6")
+
+    # Also copy to docs/ for GitHub Pages
+    generate_txt(ipv4_cat, DOCS_DIR / "iptv4.txt")
+    generate_m3u(ipv4_cat, DOCS_DIR / "iptv4.m3u", "IPTV4")
+    generate_txt(ipv6_cat, DOCS_DIR / "iptv6.txt")
+    generate_m3u(ipv6_cat, DOCS_DIR / "iptv6.m3u", "IPTV6")
 
     # Generate JSON for web page
     all_cat = categorize_entries(valid_entries, categories)
