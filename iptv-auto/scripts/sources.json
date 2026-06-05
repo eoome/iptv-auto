@@ -1,0 +1,42 @@
+{
+  "proxy": "https://ghfast.top/",
+  "upstream": [
+    {
+      "name": "vbskycn/iptv",
+      "urls": [
+        "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
+        "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.txt"
+      ]
+    },
+    {
+      "name": "YanG-1989/collect",
+      "urls": [
+        "https://raw.githubusercontent.com/YanG-1989/collect/master/FM.m3u"
+      ]
+    },
+    {
+      "name": "fanmingming/live",
+      "urls": [
+        "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
+      ]
+    },
+    {
+      "name": "HerbertHe/iptv-resources",
+      "urls": [
+        "https://raw.githubusercontent.com/HerbertHe/iptv-resources/master/iptv-resources.m3u"
+      ]
+    }
+  ],
+  "validate": {
+    "timeout": 8,
+    "max_workers": 30,
+    "retry": 1
+  },
+  "categories": {
+    "央视": ["CCTV", "CGTN"],
+    "卫视": ["卫视"],
+    "地方": ["北京", "天津", "上海", "重庆", "河北", "山西", "辽宁", "吉林", "黑龙江", "江苏", "浙江", "安徽", "福建", "江西", "山东", "河南", "湖北", "湖南", "广东", "海南", "四川", "贵州", "云南", "陕西", "甘肃", "青海", "台湾", "内蒙古", "广西", "西藏", "宁夏", "新疆"],
+    "港澳台": ["翡翠", "明珠", "凤凰", "星空", "东森", "中天", "TVB", "Viu", "澳视", "澳门"],
+    "国际": ["BBC", "CNN", "NHK", "KBS", "Discovery", "National Geographic", "HBO", "Disney"]
+  }
+}
