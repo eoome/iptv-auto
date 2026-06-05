@@ -5,322 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>IPTV 在线观看</title>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mpegts.js@latest"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --bg: #0a0a12;
-            --sidebar: #111120;
-            --card: #16162a;
-            --border: #252545;
-            --accent: #6c63ff;
-            --accent2: #ff6b6b;
-            --text: #e8e8f0;
-            --text2: #7878aa;
-            --success: #4ade80;
-            --hover: #1e1e3a;
+            --bg: #0a0a12; --sidebar: #111120; --card: #16162a;
+            --border: #252545; --accent: #6c63ff; --accent2: #ff6b6b;
+            --text: #e8e8f0; --text2: #7878aa; --success: #4ade80; --hover: #1e1e3a;
         }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Layout */
-        .app {
-            display: flex;
-            height: 100vh;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; }
+        .app { display: flex; height: 100vh; }
 
         /* Sidebar */
-        .sidebar {
-            width: 320px;
-            min-width: 320px;
-            background: var(--sidebar);
-            border-right: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-        .sidebar-header {
-            padding: 16px;
-            border-bottom: 1px solid var(--border);
-        }
-        .sidebar-header h1 {
-            font-size: 18px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .search-box {
-            width: 100%;
-            padding: 10px 14px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            color: var(--text);
-            font-size: 14px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
+        .sidebar { width: 320px; min-width: 320px; background: var(--sidebar); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
+        .sidebar-header { padding: 16px; border-bottom: 1px solid var(--border); }
+        .sidebar-header h1 { font-size: 18px; margin-bottom: 12px; }
+        .search-box { width: 100%; padding: 10px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 14px; outline: none; }
         .search-box:focus { border-color: var(--accent); }
         .search-box::placeholder { color: var(--text2); }
-
-        /* Category tabs */
-        .categories {
-            display: flex;
-            gap: 6px;
-            padding: 10px 16px;
-            overflow-x: auto;
-            border-bottom: 1px solid var(--border);
-            flex-shrink: 0;
-        }
+        .categories { display: flex; gap: 6px; padding: 10px 16px; overflow-x: auto; border-bottom: 1px solid var(--border); flex-shrink: 0; }
         .categories::-webkit-scrollbar { height: 0; }
-        .cat-btn {
-            padding: 5px 12px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            color: var(--text2);
-            font-size: 12px;
-            cursor: pointer;
-            white-space: nowrap;
-            transition: all 0.2s;
-        }
+        .cat-btn { padding: 5px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; color: var(--text2); font-size: 12px; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
         .cat-btn:hover { border-color: var(--accent); color: var(--text); }
-        .cat-btn.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: #fff;
-        }
-
-        /* Channel list */
-        .channel-list {
-            flex: 1;
-            overflow-y: auto;
-            padding: 8px;
-        }
+        .cat-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .stats { padding: 8px 16px; font-size: 12px; color: var(--text2); border-bottom: 1px solid var(--border); flex-shrink: 0; }
+        .channel-list { flex: 1; overflow-y: auto; padding: 8px; }
         .channel-list::-webkit-scrollbar { width: 4px; }
         .channel-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
-        .channel-item {
-            padding: 10px 14px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.15s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 2px;
-        }
+        .channel-item { padding: 10px 14px; border-radius: 8px; cursor: pointer; transition: all 0.15s; display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
         .channel-item:hover { background: var(--hover); }
-        .channel-item.active {
-            background: var(--accent);
-            color: #fff;
-        }
+        .channel-item.active { background: var(--accent); color: #fff; }
         .channel-item.active .ch-cat { color: rgba(255,255,255,0.7); }
-        .ch-icon {
-            width: 32px;
-            height: 32px;
-            background: var(--card);
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
+        .ch-icon { width: 32px; height: 32px; background: var(--card); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
         .channel-item.active .ch-icon { background: rgba(255,255,255,0.2); }
         .ch-info { flex: 1; min-width: 0; }
-        .ch-name {
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .ch-cat {
-            font-size: 11px;
-            color: var(--text2);
-            margin-top: 2px;
-        }
-        .ch-status {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--success);
-            flex-shrink: 0;
-        }
+        .ch-name { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .ch-cat { font-size: 11px; color: var(--text2); margin-top: 2px; }
+        .ch-count { font-size: 10px; color: var(--text2); background: var(--card); padding: 2px 6px; border-radius: 8px; flex-shrink: 0; }
 
-        /* Main area */
-        .main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            background: #000;
-        }
-
-        /* Player */
-        .player-wrap {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            background: #000;
-        }
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            background: #000;
-        }
-        .player-overlay {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            pointer-events: none;
-        }
+        /* Main */
+        .main { flex: 1; display: flex; flex-direction: column; background: #000; }
+        .player-wrap { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; background: #000; }
+        video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+        .player-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none; }
         .player-overlay.hidden { display: none; }
         .overlay-icon { font-size: 64px; margin-bottom: 16px; }
         .overlay-text { font-size: 16px; color: var(--text2); }
         .overlay-hint { font-size: 13px; color: var(--text2); margin-top: 8px; opacity: 0.6; }
 
-        /* Now playing bar */
-        .now-playing {
-            padding: 12px 20px;
-            background: var(--sidebar);
-            border-top: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-shrink: 0;
-        }
+        /* Now playing */
+        .now-playing { padding: 12px 20px; background: var(--sidebar); border-top: 1px solid var(--border); display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
         .np-icon { font-size: 24px; }
         .np-info { flex: 1; }
         .np-name { font-size: 14px; font-weight: 600; }
         .np-cat { font-size: 12px; color: var(--text2); }
-        .np-status {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 12px;
-            color: var(--success);
-        }
-        .np-dot {
-            width: 8px; height: 8px;
-            border-radius: 50%;
-            background: var(--success);
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
-        }
+        .np-status { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+        .np-status.playing { color: var(--success); }
+        .np-status.error { color: var(--accent2); }
+        .np-status.loading { color: var(--accent); }
+        .np-dot { width: 8px; height: 8px; border-radius: 50%; }
+        .np-status.playing .np-dot { background: var(--success); animation: pulse 1.5s infinite; }
+        .np-status.error .np-dot { background: var(--accent2); }
+        .np-status.loading .np-dot { background: var(--accent); animation: pulse 0.8s infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-        /* Stats */
-        .stats {
-            padding: 8px 16px;
-            font-size: 12px;
-            color: var(--text2);
-            border-bottom: 1px solid var(--border);
-            flex-shrink: 0;
-        }
+        /* Source switcher */
+        .source-bar { padding: 8px 20px; background: var(--bg); border-top: 1px solid var(--border); display: flex; align-items: center; gap: 8px; flex-shrink: 0; overflow-x: auto; }
+        .source-bar.hidden { display: none; }
+        .source-label { font-size: 11px; color: var(--text2); white-space: nowrap; }
+        .source-btn { padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; color: var(--text2); font-size: 11px; cursor: pointer; white-space: nowrap; }
+        .source-btn:hover { border-color: var(--accent); color: var(--text); }
+        .source-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .source-btn.failed { opacity: 0.4; text-decoration: line-through; }
 
         /* Mobile */
-        .mobile-toggle {
-            display: none;
-            position: fixed;
-            bottom: 80px;
-            left: 16px;
-            z-index: 100;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--accent);
-            border: none;
-            color: #fff;
-            font-size: 20px;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(108,99,255,0.4);
-        }
-
+        .mobile-toggle { display: none; position: fixed; bottom: 80px; left: 16px; z-index: 100; width: 48px; height: 48px; border-radius: 50%; background: var(--accent); border: none; color: #fff; font-size: 20px; cursor: pointer; box-shadow: 0 4px 16px rgba(108,99,255,0.4); }
         @media (max-width: 768px) {
-            .sidebar {
-                position: fixed;
-                left: -320px;
-                top: 0;
-                bottom: 0;
-                z-index: 200;
-                transition: left 0.3s;
-            }
+            .sidebar { position: fixed; left: -320px; top: 0; bottom: 0; z-index: 200; transition: left 0.3s; }
             .sidebar.open { left: 0; }
             .mobile-toggle { display: flex; align-items: center; justify-content: center; }
-            .sidebar-backdrop {
-                display: none;
-                position: fixed;
-                inset: 0;
-                background: rgba(0,0,0,0.5);
-                z-index: 150;
-            }
+            .sidebar-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 150; }
             .sidebar-backdrop.show { display: block; }
         }
 
-        /* Error */
-        .error-toast {
-            position: fixed;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--accent2);
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 13px;
-            z-index: 999;
-            display: none;
-            animation: fadeIn 0.3s;
-        }
-        @keyframes fadeIn { from { opacity: 0; transform: translateX(-50%) translateY(10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
-
-        /* Loading spinner */
-        .spinner {
-            width: 32px; height: 32px;
-            border: 3px solid var(--border);
-            border-top-color: var(--accent);
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin-bottom: 12px;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .error-toast { position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%); background: var(--accent2); color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 13px; z-index: 999; display: none; }
     </style>
 </head>
 <body>
 <div class="app">
     <div class="sidebar-backdrop" id="backdrop" onclick="toggleSidebar()"></div>
-
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <h1>📺 IPTV 直播</h1>
-            <input type="text" class="search-box" id="search" placeholder="搜索频道..." autocomplete="off">
+            <input type="text" class="search-box" id="search" placeholder="搜索频道... (按 /)" autocomplete="off">
         </div>
         <div class="categories" id="categories"></div>
         <div class="stats" id="stats">加载中...</div>
         <div class="channel-list" id="channelList"></div>
     </aside>
-
     <main class="main">
-        <div class="player-wrap" id="playerWrap">
+        <div class="player-wrap">
             <video id="video" controls autoplay muted></video>
             <div class="player-overlay" id="overlay">
                 <div class="overlay-icon">📺</div>
                 <div class="overlay-text">选择频道开始观看</div>
-                <div class="overlay-hint">点击左侧频道列表</div>
+                <div class="overlay-hint">点击左侧频道列表 · 按 / 搜索</div>
             </div>
+        </div>
+        <div class="source-bar hidden" id="sourceBar">
+            <span class="source-label">🔀 源:</span>
         </div>
         <div class="now-playing" id="nowPlaying" style="display:none;">
             <div class="np-icon">📺</div>
@@ -328,49 +121,68 @@
                 <div class="np-name" id="npName">-</div>
                 <div class="np-cat" id="npCat">-</div>
             </div>
-            <div class="np-status">
+            <div class="np-status loading" id="npStatus">
                 <div class="np-dot"></div>
-                <span>播放中</span>
+                <span id="npStatusText">加载中...</span>
             </div>
         </div>
     </main>
 </div>
-
-<button class="mobile-toggle" id="mobileToggle" onclick="toggleSidebar()">☰</button>
+<button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
 <div class="error-toast" id="errorToast"></div>
 
 <script>
-const DATA_URL = 'https://eoome.github.io/iptv-auto/channels.json';
-let channels = [];
+const DATA_URL = 'channels.json';
+let allChannels = [];   // flat list with category
+let channelsByGroup = {}; // name -> [{url, category}]
 let categories = {};
 let currentCat = '全部';
 let hls = null;
+let mpegtsPlayer = null;
+let currentSources = [];
+let currentSourceIdx = 0;
 
-// Load data
+// CORS proxies (fallback chain)
+const PROXIES = [
+    '',  // try direct first
+    'https://corsproxy.io/?',
+    'https://api.allorigins.win/raw?url=',
+];
+
 async function loadData() {
     try {
         const resp = await fetch(DATA_URL);
         const data = await resp.json();
 
-        // Flatten
+        // Build grouped channels: group by name
+        channelsByGroup = {};
         for (const [cat, items] of Object.entries(data.categories)) {
-            for (const ch of items) {
-                channels.push({ ...ch, category: cat });
-            }
             categories[cat] = items.length;
+            for (const ch of items) {
+                if (!channelsByGroup[ch.name]) channelsByGroup[ch.name] = [];
+                channelsByGroup[ch.name].push({ url: ch.url, category: cat });
+            }
         }
+
+        // Flat list (deduplicated by name)
+        allChannels = Object.entries(channelsByGroup).map(([name, sources]) => ({
+            name,
+            category: sources[0].category,
+            sources: sources.map(s => s.url),
+            sourceCount: sources.length
+        }));
 
         renderCategories();
         renderChannels();
         updateStats();
     } catch (e) {
-        document.getElementById('stats').textContent = '❌ 加载失败，请刷新重试';
+        document.getElementById('stats').textContent = '❌ 加载失败: ' + e.message;
     }
 }
 
 function renderCategories() {
     const el = document.getElementById('categories');
-    const total = channels.length;
+    const total = allChannels.length;
     let html = `<button class="cat-btn active" data-cat="全部">全部 (${total})</button>`;
     for (const [cat, count] of Object.entries(categories)) {
         html += `<button class="cat-btn" data-cat="${cat}">${cat} (${count})</button>`;
@@ -389,98 +201,229 @@ function renderCategories() {
 function renderChannels() {
     const el = document.getElementById('channelList');
     const query = document.getElementById('search').value.toLowerCase();
-    let filtered = channels;
-
-    if (currentCat !== '全部') {
-        filtered = filtered.filter(ch => ch.category === currentCat);
-    }
-    if (query) {
-        filtered = filtered.filter(ch => ch.name.toLowerCase().includes(query));
-    }
+    let filtered = allChannels;
+    if (currentCat !== '全部') filtered = filtered.filter(ch => ch.category === currentCat);
+    if (query) filtered = filtered.filter(ch => ch.name.toLowerCase().includes(query));
 
     el.innerHTML = filtered.map((ch, i) => `
-        <div class="channel-item" data-idx="${channels.indexOf(ch)}">
+        <div class="channel-item" data-name="${escAttr(ch.name)}">
             <div class="ch-icon">${getCatIcon(ch.category)}</div>
             <div class="ch-info">
                 <div class="ch-name">${escHtml(ch.name)}</div>
                 <div class="ch-cat">${escHtml(ch.category)}</div>
             </div>
-            <div class="ch-status"></div>
+            ${ch.sourceCount > 1 ? `<div class="ch-count">${ch.sourceCount}源</div>` : ''}
         </div>
     `).join('');
 
     el.querySelectorAll('.channel-item').forEach(item => {
-        item.addEventListener('click', () => playChannel(parseInt(item.dataset.idx)));
+        item.addEventListener('click', () => playChannel(item.dataset.name));
     });
 
     updateStats(filtered.length);
 }
 
 function getCatIcon(cat) {
-    const icons = { '央视': '🏛', '卫视': '📡', '地方': '🏙', '港澳台': '🇭🇰', '国际': '🌍', '其他': '📺' };
-    return icons[cat] || '📺';
+    return { '央视频道': '🏛', '卫视频道': '📡', '地方频道': '🏙', '港澳台': '🇭🇰', '国际频道': '🌍' }[cat] || '📺';
 }
-
-function escHtml(s) {
-    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
+function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escAttr(s) { return s.replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 
 function updateStats(count) {
-    const el = document.getElementById('stats');
-    const c = count !== undefined ? count : channels.length;
-    el.textContent = `共 ${c} 个频道`;
+    document.getElementById('stats').textContent = `共 ${count !== undefined ? count : allChannels.length} 个频道`;
 }
 
-// Play
-function playChannel(idx) {
-    const ch = channels[idx];
+// ── Play ──────────────────────────────────────────────
+
+function destroyPlayers() {
+    if (hls) { hls.destroy(); hls = null; }
+    if (mpegtsPlayer) { mpegtsPlayer.destroy(); mpegtsPlayer = null; }
+    const video = document.getElementById('video');
+    video.removeAttribute('src');
+    video.load();
+}
+
+function setStatus(state, text) {
+    const el = document.getElementById('npStatus');
+    const textEl = document.getElementById('npStatusText');
+    el.className = 'np-status ' + state;
+    textEl.textContent = text;
+}
+
+function playChannel(name) {
+    const ch = allChannels.find(c => c.name === name);
     if (!ch) return;
 
-    // Update UI
+    // Update sidebar active
     document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
-    document.querySelector(`.channel-item[data-idx="${idx}"]`)?.classList.add('active');
+    document.querySelector(`.channel-item[data-name="${escAttr(name)}"]`)?.classList.add('active');
 
     document.getElementById('overlay').classList.add('hidden');
     document.getElementById('nowPlaying').style.display = 'flex';
     document.getElementById('npName').textContent = ch.name;
     document.getElementById('npCat').textContent = ch.category;
 
+    currentSources = ch.sources;
+    currentSourceIdx = 0;
+
+    renderSourceBar();
+    tryPlay();
+}
+
+function renderSourceBar() {
+    const bar = document.getElementById('sourceBar');
+    if (currentSources.length <= 1) {
+        bar.classList.add('hidden');
+        return;
+    }
+    bar.classList.remove('hidden');
+    bar.innerHTML = `<span class="source-label">🔀 源 (${currentSources.length}):</span>` +
+        currentSources.map((_, i) =>
+            `<button class="source-btn ${i === currentSourceIdx ? 'active' : ''}" onclick="switchSource(${i})">源${i + 1}</button>`
+        ).join('');
+}
+
+function switchSource(idx) {
+    currentSourceIdx = idx;
+    document.querySelectorAll('.source-btn').forEach((b, i) => b.classList.toggle('active', i === idx));
+    tryPlay();
+}
+
+function tryPlay() {
+    destroyPlayers();
+    const url = currentSources[currentSourceIdx];
+    if (!url) { setStatus('error', '所有源都失败'); return; }
+
+    setStatus('loading', `尝试源 ${currentSourceIdx + 1}/${currentSources.length}...`);
+
     // Close sidebar on mobile
     if (window.innerWidth <= 768) toggleSidebar();
 
-    // Play
     const video = document.getElementById('video');
-    const url = ch.url;
+    const isM3u8 = url.includes('.m3u8') || url.includes('m3u8');
+    const isHttp = url.startsWith('http://');
 
-    // Destroy old HLS
-    if (hls) { hls.destroy(); hls = null; }
+    // For HTTP streams, we need proxy or mpegts.js
+    // For HTTPS m3u8, use hls.js
+    // For HTTPS ts, use mpegts.js
 
-    if (url.includes('.m3u8') || url.includes('m3u8')) {
-        if (Hls.isSupported()) {
-            hls = new Hls({ maxBufferLength: 10, maxMaxBufferLength: 30 });
-            hls.loadSource(url);
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(()=>{}));
-            hls.on(Hls.Events.ERROR, (_, data) => {
-                if (data.fatal) showError('播放失败，尝试下一个...');
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = url;
-            video.play().catch(()=>{});
-        }
+    if (isM3u8 && !isHttp) {
+        // HTTPS m3u8 → hls.js
+        playWithHls(url);
+    } else if (isM3u8 && isHttp) {
+        // HTTP m3u8 → try proxy with hls.js
+        playWithProxy(url, true);
+    } else if (!isHttp) {
+        // HTTPS direct → try native
+        playNative(url);
     } else {
-        video.src = url;
-        video.play().catch(()=>{});
+        // HTTP direct → proxy
+        playWithProxy(url, false);
     }
+}
 
-    // Auto next on error
-    video.onerror = () => {
-        showError('源失效，尝试下一个...');
-        setTimeout(() => {
-            const next = (idx + 1) % channels.length;
-            playChannel(next);
-        }, 2000);
+function playWithHls(url) {
+    const video = document.getElementById('video');
+    if (Hls.isSupported()) {
+        hls = new Hls({
+            maxBufferLength: 10,
+            maxMaxBufferLength: 30,
+            manifestLoadingRetryDelay: 1000,
+            levelLoadingRetryDelay: 1000,
+        });
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+            video.play().catch(() => {});
+            setStatus('playing', '播放中');
+        });
+        hls.on(Hls.Events.ERROR, (_, data) => {
+            if (data.fatal) {
+                setStatus('error', '播放失败');
+                autoNext();
+            }
+        });
+    } else {
+        playNative(url);
+    }
+}
+
+function playWithProxy(url, isM3u8) {
+    // Try proxies one by one
+    let proxyIdx = 0;
+    function tryNext() {
+        if (proxyIdx >= PROXIES.length) {
+            setStatus('error', '所有代理都失败');
+            autoNext();
+            return;
+        }
+        const proxiedUrl = PROXIES[proxyIdx] + encodeURIComponent(url);
+        setStatus('loading', `代理 ${proxyIdx + 1}/${PROXIES.length}...`);
+
+        if (isM3u8) {
+            playWithHlsDirect(proxiedUrl, () => {
+                proxyIdx++;
+                tryNext();
+            });
+        } else {
+            playNativeDirect(proxiedUrl, () => {
+                proxyIdx++;
+                tryNext();
+            });
+        }
+    }
+    tryNext();
+}
+
+function playWithHlsDirect(url, onFail) {
+    const video = document.getElementById('video');
+    if (Hls.isSupported()) {
+        hls = new Hls({ maxBufferLength: 10 });
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+            video.play().catch(() => {});
+            setStatus('playing', '播放中');
+        });
+        hls.on(Hls.Events.ERROR, (_, data) => {
+            if (data.fatal) onFail();
+        });
+    } else {
+        onFail();
+    }
+}
+
+function playNative(url) {
+    playNativeDirect(url, () => {
+        setStatus('error', '播放失败');
+        autoNext();
+    });
+}
+
+function playNativeDirect(url, onFail) {
+    const video = document.getElementById('video');
+    video.src = url;
+    video.oncanplay = () => {
+        video.play().catch(() => {});
+        setStatus('playing', '播放中');
     };
+    video.onerror = () => onFail();
+}
+
+function autoNext() {
+    setTimeout(() => {
+        if (currentSourceIdx < currentSources.length - 1) {
+            currentSourceIdx++;
+            // Mark failed source
+            document.querySelectorAll('.source-btn')[currentSourceIdx - 1]?.classList.add('failed');
+            tryPlay();
+        }
+    }, 1500);
+}
+
+function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('open');
+    document.getElementById('backdrop').classList.toggle('show');
 }
 
 function showError(msg) {
@@ -490,15 +433,7 @@ function showError(msg) {
     setTimeout(() => el.style.display = 'none', 3000);
 }
 
-function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('open');
-    document.getElementById('backdrop').classList.toggle('show');
-}
-
-// Search
 document.getElementById('search').addEventListener('input', renderChannels);
-
-// Keyboard shortcuts
 document.addEventListener('keydown', e => {
     if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
         e.preventDefault();
@@ -506,7 +441,6 @@ document.addEventListener('keydown', e => {
     }
 });
 
-// Init
 loadData();
 </script>
 </body>
