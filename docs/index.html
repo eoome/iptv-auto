@@ -401,8 +401,8 @@
 
         function updateSourceURLs() {
             const prefix = currentSource === 'ipv6' ? 'iptv6' : 'iptv4';
-            const txtUrl = BASE_URL + '../tv/' + prefix + '.txt';
-            const m3uUrl = BASE_URL + '../tv/' + prefix + '.m3u';
+            const txtUrl = BASE_URL + prefix + '.txt';
+            const m3uUrl = BASE_URL + prefix + '.m3u';
 
             document.getElementById('btn-txt').href = txtUrl;
             document.getElementById('url-txt').textContent = txtUrl.split('/').slice(-3).join('/');
@@ -510,7 +510,7 @@
         // Copy current source URL
         document.getElementById('btn-copy-url').addEventListener('click', () => {
             const prefix = currentSource === 'ipv6' ? 'iptv6' : 'iptv4';
-            const url = BASE_URL + '../tv/' + prefix + '.m3u';
+            const url = BASE_URL + prefix + '.m3u';
             copyToClipboard(url);
             showToast('已复制 M3U 播放源链接');
         });

@@ -144,10 +144,11 @@ let currentSourceIdx = 0;
 
 // CORS proxies (fallback chain)
 const PROXIES = [
-    '',  // try direct first
-    'https://corsproxy.io/?',
-    'https://api.allorigins.win/raw?url=',
+    '',                          // try direct first
+    'https://corsproxy.io/?',    // format: ?url (no encoding)
+    'https://api.allorigins.win/raw?url=',  // format: ?url=encoded
 ];
+const NEED_ENCODE = [false, false, true]; // whether to encode the URL
 
 async function loadData() {
     try {
@@ -301,24 +302,22 @@ function tryPlay() {
 
     const video = document.getElementById('video');
     const isM3u8 = url.includes('.m3u8') || url.includes('m3u8');
+    const isTs = url.includes('.ts') || url.includes('/tsfile/') || url.includes('mpegts');
     const isHttp = url.startsWith('http://');
 
-    // For HTTP streams, we need proxy or mpegts.js
-    // For HTTPS m3u8, use hls.js
-    // For HTTPS ts, use mpegts.js
-
     if (isM3u8 && !isHttp) {
-        // HTTPS m3u8 → hls.js
         playWithHls(url);
     } else if (isM3u8 && isHttp) {
-        // HTTP m3u8 → try proxy with hls.js
         playWithProxy(url, true);
-    } else if (!isHttp) {
-        // HTTPS direct → try native
-        playNative(url);
+    } else if (isTs || isHttp) {
+        // TS streams or HTTP streams → try mpegts.js first, then proxy
+        if (!isHttp && mpegts.isSupported()) {
+            playWithMpegts(url);
+        } else {
+            playWithProxy(url, false);
+        }
     } else {
-        // HTTP direct → proxy
-        playWithProxy(url, false);
+        playNative(url);
     }
 }
 
@@ -348,16 +347,44 @@ function playWithHls(url) {
     }
 }
 
+function playWithMpegts(url) {
+    const video = document.getElementById('video');
+    try {
+        mpegtsPlayer = mpegts.createPlayer({
+            type: 'mse',
+            isLive: true,
+            url: url,
+        }, {
+            enableWorker: true,
+            lazyLoadMaxDuration: 3 * 60,
+            seekType: 'range',
+        });
+        mpegtsPlayer.attachMediaElement(video);
+        mpegtsPlayer.load();
+        mpegtsPlayer.play();
+        mpegtsPlayer.on(mpegts.Events.ERROR, () => {
+            setStatus('error', 'mpegts 播放失败');
+            autoNext();
+        });
+        setStatus('playing', '播放中');
+    } catch (e) {
+        setStatus('error', 'mpegts 不支持');
+        autoNext();
+    }
+}
+
 function playWithProxy(url, isM3u8) {
-    // Try proxies one by one
     let proxyIdx = 0;
     function tryNext() {
         if (proxyIdx >= PROXIES.length) {
-            setStatus('error', '所有代理都失败');
-            autoNext();
+            setStatus('error', '所有代理都失败，尝试直接播放...');
+            // Last resort: try native anyway
+            if (isM3u8) playWithHls(url); else playNative(url);
             return;
         }
-        const proxiedUrl = PROXIES[proxyIdx] + encodeURIComponent(url);
+        const proxiedUrl = PROXIES[proxyIdx]
+            ? PROXIES[proxyIdx] + (NEED_ENCODE[proxyIdx] ? encodeURIComponent(url) : url)
+            : url;
         setStatus('loading', `代理 ${proxyIdx + 1}/${PROXIES.length}...`);
 
         if (isM3u8) {
@@ -366,10 +393,18 @@ function playWithProxy(url, isM3u8) {
                 tryNext();
             });
         } else {
-            playNativeDirect(proxiedUrl, () => {
-                proxyIdx++;
-                tryNext();
-            });
+            // For TS streams, try mpegts.js with proxied URL
+            if (mpegts.isSupported()) {
+                playWithMpegtsDirect(proxiedUrl, () => {
+                    proxyIdx++;
+                    tryNext();
+                });
+            } else {
+                playNativeDirect(proxiedUrl, () => {
+                    proxyIdx++;
+                    tryNext();
+                });
+            }
         }
     }
     tryNext();
@@ -389,6 +424,31 @@ function playWithHlsDirect(url, onFail) {
             if (data.fatal) onFail();
         });
     } else {
+        onFail();
+    }
+}
+
+function playWithMpegtsDirect(url, onFail) {
+    const video = document.getElementById('video');
+    try {
+        if (mpegtsPlayer) { mpegtsPlayer.destroy(); mpegtsPlayer = null; }
+        mpegtsPlayer = mpegts.createPlayer({
+            type: 'mse',
+            isLive: true,
+            url: url,
+        }, { enableWorker: true });
+        mpegtsPlayer.attachMediaElement(video);
+        mpegtsPlayer.load();
+        mpegtsPlayer.play();
+        let settled = false;
+        mpegtsPlayer.on(mpegts.Events.ERROR, () => {
+            if (!settled) { settled = true; onFail(); }
+        });
+        video.oncanplay = () => {
+            if (!settled) { settled = true; setStatus('playing', '播放中'); }
+        };
+        setTimeout(() => { if (!settled) { settled = true; onFail(); } }, 8000);
+    } catch (e) {
         onFail();
     }
 }
