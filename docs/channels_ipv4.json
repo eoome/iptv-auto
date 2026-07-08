@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-08 13:27:30",
-  "total": 607,
+  "updated": "2026-07-08 19:04:25",
+  "total": 643,
   "categories": {
     "央视频道": [
       {
@@ -9,19 +9,19 @@
       },
       {
         "name": "CCTV1",
-        "url": "http://123.130.84.106:8154/tsfile/live/0001_1.m3u8"
-      },
-      {
-        "name": "CCTV1",
-        "url": "http://182.150.23.74:808/hls/1/index.m3u8"
-      },
-      {
-        "name": "CCTV1",
         "url": "http://112.27.235.94:8000/hls/1/index.m3u8"
       },
       {
-        "name": "CCTV2",
-        "url": "http://112.27.235.94:8000/hls/2/index.m3u8"
+        "name": "CCTV1",
+        "url": "http://61.136.172.236:9901/tsfile/live/0001_1.m3u8"
+      },
+      {
+        "name": "CCTV1",
+        "url": "http://123.163.114.168:85/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV1",
+        "url": "http://123.130.84.106:8154/tsfile/live/0001_1.m3u8"
       },
       {
         "name": "CCTV2",
@@ -33,11 +33,15 @@
       },
       {
         "name": "CCTV2",
-        "url": "http://123.130.84.106:8154/tsfile/live/0002_1.m3u8"
+        "url": "http://61.136.172.236:9901/tsfile/live/0002_1.m3u8"
       },
       {
         "name": "CCTV2",
-        "url": "http://61.136.172.236:9901/tsfile/live/0002_1.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV2",
+        "url": "http://125.42.151.116:9901/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV3",
@@ -45,15 +49,19 @@
       },
       {
         "name": "CCTV3",
-        "url": "http://123.163.114.168:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://112.27.235.94:8000/hls/3/index.m3u8"
+      },
+      {
+        "name": "CCTV3",
+        "url": "http://123.163.114.168:85/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV3",
+        "url": "http://125.42.150.240:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV4",
         "url": "https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8"
-      },
-      {
-        "name": "CCTV4",
-        "url": "http://123.130.84.106:8154/tsfile/live/0004_1.m3u8"
       },
       {
         "name": "CCTV4",
@@ -68,8 +76,24 @@
         "url": "http://125.42.150.240:9901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
+        "name": "CCTV4",
+        "url": "http://112.27.235.94:8000/hls/4/index.m3u8"
+      },
+      {
         "name": "CCTV5",
-        "url": "http://123.163.114.168:85/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://123.163.114.168:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV5",
+        "url": "http://183.11.239.36:808/hls/93/index.m3u8"
+      },
+      {
+        "name": "CCTV5",
+        "url": "http://101.66.199.247:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "CCTV5",
+        "url": "http://gmxw.7766.org:808/hls/93/index.m3u8"
       },
       {
         "name": "CCTV5+",
@@ -85,15 +109,7 @@
       },
       {
         "name": "CCTV5+",
-        "url": "http://182.150.23.74:808/hls/16/index.m3u8"
-      },
-      {
-        "name": "CCTV5+",
         "url": "http://112.27.235.94:8000/hls/6/index.m3u8"
-      },
-      {
-        "name": "CCTV6",
-        "url": "http://123.163.114.168:85/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV6",
@@ -105,15 +121,31 @@
       },
       {
         "name": "CCTV6",
+        "url": "http://123.163.114.168:85/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV6",
         "url": "http://59.39.89.130:60901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV7",
-        "url": "http://112.27.235.94:8000/hls/8/index.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV7",
-        "url": "http://123.163.114.168:85/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://183.223.157.33:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV7",
+        "url": "http://123.130.84.106:8154/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV7",
+        "url": "http://101.66.198.115:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "CCTV7",
+        "url": "http://101.66.199.247:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "CCTV8",
@@ -128,6 +160,14 @@
         "url": "http://123.163.114.168:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
+        "name": "CCTV8",
+        "url": "http://183.223.157.33:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV8",
+        "url": "http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
         "name": "CCTV9",
         "url": "http://74.91.26.218:82/live/cctv9hd.m3u8"
       },
@@ -140,8 +180,8 @@
         "url": "http://123.163.114.168:85/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
-        "name": "CCTV10",
-        "url": "http://59.39.89.130:60901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "name": "CCTV9",
+        "url": "http://183.223.157.33:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV10",
@@ -153,7 +193,23 @@
       },
       {
         "name": "CCTV10",
-        "url": "http://123.163.114.168:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://123.163.114.168:85/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV10",
+        "url": "http://101.66.199.247:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "CCTV10",
+        "url": "http://59.39.89.130:60901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV11",
+        "url": "http://61.136.172.236:9901/tsfile/live/0011_1.m3u8"
+      },
+      {
+        "name": "CCTV11",
+        "url": "http://183.223.157.33:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV11",
@@ -161,11 +217,11 @@
       },
       {
         "name": "CCTV11",
-        "url": "http://61.136.172.236:9901/tsfile/live/0011_1.m3u8"
+        "url": "http://101.66.199.247:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
-        "name": "CCTV12",
-        "url": "http://74.91.26.218:82/live/cctv12hd.m3u8"
+        "name": "CCTV11",
+        "url": "http://101.66.198.8:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "CCTV12",
@@ -173,7 +229,15 @@
       },
       {
         "name": "CCTV12",
+        "url": "http://74.91.26.218:82/live/cctv12hd.m3u8"
+      },
+      {
+        "name": "CCTV12",
         "url": "http://112.27.235.94:8000/hls/13/index.m3u8"
+      },
+      {
+        "name": "CCTV12",
+        "url": "http://124.165.251.82:85/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "CCTV12",
@@ -181,19 +245,31 @@
       },
       {
         "name": "CCTV13",
-        "url": "http://pull-hls-f1.douyinliving.com/media/stream-696107587393815378/playlist.m3u8?keeptime=00093a80&wsSecret=f499c99bfbd0d5b43b1d20ead24f5058&wsTime=6a452729&s_anchor=1&arch_hrchy=s2&major_anchor_level=vip&t_id=037-20260701224144E16D5A7566C0BF124425-aeSDux"
+        "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8"
       },
       {
         "name": "CCTV13",
-        "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8"
+        "url": "http://112.27.235.94:8000/hls/14/index.m3u8"
       },
       {
         "name": "CCTV13",
         "url": "http://61.136.172.236:9901/tsfile/live/0013_1.m3u8"
       },
       {
+        "name": "CCTV13",
+        "url": "http://123.163.114.168:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV13",
+        "url": "http://101.66.198.115:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
         "name": "CCTV14",
         "url": "http://123.130.84.106:8154/tsfile/live/0014_1.m3u8"
+      },
+      {
+        "name": "CCTV14",
+        "url": "http://112.27.235.94:8000/hls/15/index.m3u8"
       },
       {
         "name": "CCTV14",
@@ -204,16 +280,32 @@
         "url": "http://183.223.157.33:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
+        "name": "CCTV14",
+        "url": "http://123.163.114.168:85/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
         "name": "CCTV15",
-        "url": "http://222.134.245.16:9901/tsfile/live/0015_1.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "CCTV15",
+        "url": "http://101.66.198.115:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "CCTV15",
+        "url": "http://101.66.199.247:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "CCTV15",
+        "url": "http://112.27.235.94:8000/hls/16/index.m3u8"
       },
       {
         "name": "CCTV15",
         "url": "http://123.130.84.106:8154/tsfile/live/0015_1.m3u8"
       },
       {
-        "name": "CCTV15",
-        "url": "http://123.163.114.168:85/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "name": "CCTV16",
+        "url": "http://183.11.239.36:808/hls/169/index.m3u8"
       },
       {
         "name": "CCTV16",
@@ -225,11 +317,11 @@
       },
       {
         "name": "CCTV17",
-        "url": "http://123.130.84.106:8154/tsfile/live/0019_1.m3u8"
+        "url": "http://drive.mxmy.net:8888/udp/239.3.1.151:8144"
       },
       {
         "name": "CCTV17",
-        "url": "http://drive.mxmy.net:8888/udp/239.3.1.151:8144"
+        "url": "http://123.130.84.106:8154/tsfile/live/0019_1.m3u8"
       },
       {
         "name": "CCTV17",
@@ -241,7 +333,7 @@
       },
       {
         "name": "CCTV央视台球",
-        "url": "https://epg.pw/stream/ca9c1cd4b97fb824cedd7fedfd0c7a950afdd7f00751cfbb7c2d89831d7746a5.m3u8"
+        "url": "https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e0308ed017.m3u8"
       },
       {
         "name": "CCTV第一剧场",
@@ -253,19 +345,19 @@
       },
       {
         "name": "CGTN",
-        "url": "http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8"
-      },
-      {
-        "name": "CGTN",
         "url": "https://0472.org/hls/cgtn.m3u8"
       },
       {
-        "name": "CGTN俄语",
-        "url": "http://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd.m3u8"
+        "name": "CGTN",
+        "url": "http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8"
       },
       {
         "name": "CGTN俄语",
         "url": "https://0472.org/hls/cgtne.m3u8"
+      },
+      {
+        "name": "CGTN俄语",
+        "url": "http://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd.m3u8"
       },
       {
         "name": "CGTN法语",
@@ -310,16 +402,36 @@
         "url": "http://123.130.84.106:8154/tsfile/live/0130_1.m3u8"
       },
       {
+        "name": "安徽卫视",
+        "url": "http://101.66.198.115:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "安徽卫视",
+        "url": "http://125.42.151.116:9901/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "安徽卫视",
+        "url": "http://101.66.198.8:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
         "name": "北京卫视",
         "url": "http://satellitepull.cnr.cn/live/wxbtv/playlist.m3u8"
       },
       {
         "name": "北京卫视",
-        "url": "http://222.134.245.16:9901/tsfile/live/0122_1.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "北京卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://101.66.199.247:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "北京卫视",
+        "url": "http://101.66.198.8:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "北京卫视",
+        "url": "http://101.66.198.163:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "兵团卫视",
@@ -335,7 +447,7 @@
       },
       {
         "name": "东方卫视",
-        "url": "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8"
+        "url": "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
       },
       {
         "name": "东方卫视",
@@ -343,11 +455,7 @@
       },
       {
         "name": "东方卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
-      {
-        "name": "东南卫视",
-        "url": "http://61.136.172.236:9901/tsfile/live/0137_1.m3u8"
+        "url": "http://183.11.239.36:808/hls/114/index.m3u8"
       },
       {
         "name": "东南卫视",
@@ -355,7 +463,19 @@
       },
       {
         "name": "东南卫视",
+        "url": "http://61.136.172.236:9901/tsfile/live/0137_1.m3u8"
+      },
+      {
+        "name": "东南卫视",
         "url": "http://123.163.114.168:85/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "东南卫视",
+        "url": "http://125.42.151.116:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "东南卫视",
+        "url": "http://125.42.150.240:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "甘肃卫视",
@@ -371,10 +491,6 @@
       },
       {
         "name": "甘肃卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0141_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
-      {
-        "name": "甘肃卫视",
         "url": "http://183.11.239.36:808/hls/119/index.m3u8"
       },
       {
@@ -387,19 +503,19 @@
       },
       {
         "name": "广东卫视",
-        "url": "http://112.27.235.94:8000/hls/30/index.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "广东卫视",
         "url": "http://59.39.89.130:60901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
-        "name": "广西卫视",
-        "url": "https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8"
+        "name": "广东卫视",
+        "url": "http://125.42.151.116:9901/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "广西卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8"
       },
       {
         "name": "广西卫视",
@@ -410,12 +526,24 @@
         "url": "http://61.136.172.236:9901/tsfile/live/0113_1.m3u8"
       },
       {
+        "name": "广西卫视",
+        "url": "http://123.163.114.168:85/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
         "name": "贵州卫视",
         "url": "http://61.136.172.236:9901/tsfile/live/0120_1.m3u8"
       },
       {
         "name": "贵州卫视",
+        "url": "http://112.27.235.94:8000/hls/46/index.m3u8"
+      },
+      {
+        "name": "贵州卫视",
         "url": "http://59.39.89.130:60901/tsfile/live/0125_15.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "贵州卫视",
+        "url": "http://101.66.198.115:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "海南卫视",
@@ -423,23 +551,31 @@
       },
       {
         "name": "海南卫视",
-        "url": "http://183.223.157.33:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
-      {
-        "name": "海南卫视",
         "url": "http://183.11.239.36:808/hls/124/index.m3u8"
       },
       {
-        "name": "海峡卫视",
-        "url": "http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8"
+        "name": "海南卫视",
+        "url": "http://183.223.157.33:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
-        "name": "河北卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0117_1.m3u8"
+        "name": "海峡卫视",
+        "url": "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8"
       },
       {
         "name": "河北卫视",
         "url": "http://61.136.172.236:9901/tsfile/live/0117_1.m3u8"
+      },
+      {
+        "name": "河北卫视",
+        "url": "http://101.66.198.115:9901/tsfile/live/0117_1.m3u8?key=txiptv&playlive=0&authid=0"
+      },
+      {
+        "name": "河北卫视",
+        "url": "http://183.11.239.36:808/hls/54/index.m3u8"
+      },
+      {
+        "name": "河南卫视",
+        "url": "http://61.136.172.236:9901/tsfile/live/0139_1.m3u8"
       },
       {
         "name": "河南卫视",
@@ -447,31 +583,35 @@
       },
       {
         "name": "河南卫视",
-        "url": "http://182.150.23.74:808/hls/33/index.m3u8"
+        "url": "http://101.66.198.115:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "河南卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0139_1.m3u8"
+        "url": "http://125.42.150.233:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "河南卫视",
-        "url": "http://61.136.172.236:9901/tsfile/live/0139_1.m3u8"
+        "url": "http://125.42.150.240:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "湖北卫视",
-        "url": "http://124.116.183.146:9901/tsfile/live/0132_1.m3u8"
+        "url": "http://101.66.198.115:9901/tsfile/live/0132_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "湖北卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0132_1.m3u8"
+        "url": "http://183.11.239.36:808/hls/46/index.m3u8"
       },
       {
-        "name": "湖南卫视",
-        "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8"
+        "name": "湖北卫视",
+        "url": "http://112.27.235.94:8000/hls/41/index.m3u8"
       },
       {
         "name": "湖南卫视",
         "url": "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8"
+      },
+      {
+        "name": "湖南卫视",
+        "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8"
       },
       {
         "name": "湖南卫视",
@@ -487,15 +627,19 @@
       },
       {
         "name": "吉林卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0116_1.m3u8"
-      },
-      {
-        "name": "吉林卫视",
         "url": "http://61.136.172.236:9901/tsfile/live/0116_1.m3u8"
       },
       {
-        "name": "江苏卫视",
-        "url": "http://218.13.170.98:9901/tsfile/live/1003_1.m3u8"
+        "name": "吉林卫视",
+        "url": "http://59.39.89.130:60901/tsfile/live/0125_19.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "吉林卫视",
+        "url": "http://223.75.149.129:9906/tsfile/live/0116_1.m3u8?key=txiptv"
+      },
+      {
+        "name": "吉林卫视",
+        "url": "http://101.66.198.115:9901/tsfile/live/0116_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "江苏卫视",
@@ -503,11 +647,15 @@
       },
       {
         "name": "江苏卫视",
+        "url": "http://218.13.170.98:9901/tsfile/live/1003_1.m3u8"
+      },
+      {
+        "name": "江苏卫视",
         "url": "http://61.136.172.236:9901/tsfile/live/0127_1.m3u8"
       },
       {
-        "name": "江西卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "name": "江苏卫视",
+        "url": "http://101.66.198.115:9901/tsfile/live/0017_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "江西卫视",
@@ -515,7 +663,15 @@
       },
       {
         "name": "江西卫视",
+        "url": "http://123.163.114.168:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "江西卫视",
         "url": "http://59.39.89.130:60901/tsfile/live/0125_10.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "江西卫视",
+        "url": "http://101.66.198.115:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=0&authid=0"
       },
       {
         "name": "辽宁卫视",
@@ -527,7 +683,7 @@
       },
       {
         "name": "辽宁卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0121_1.m3u8"
+        "url": "http://59.39.89.130:60901/tsfile/live/0125_13.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "宁夏卫视",
@@ -538,36 +694,28 @@
         "url": "http://183.11.239.36:808/hls/106/index.m3u8"
       },
       {
-        "name": "农林卫视",
-        "url": "http://124.116.183.146:9901/tsfile/live/1004_1.m3u8"
-      },
-      {
-        "name": "青海卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0140_1.m3u8"
-      },
-      {
         "name": "青海卫视",
         "url": "http://123.163.114.168:85/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
-        "name": "山东卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0131_1.m3u8"
+        "name": "厦门卫视",
+        "url": "http://183.11.239.36:808/hls/17/index.m3u8"
       },
       {
         "name": "山东卫视",
         "url": "http://61.136.172.236:9901/tsfile/live/0131_1.m3u8"
       },
       {
+        "name": "山东卫视",
+        "url": "http://123.163.114.168:85/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "山东卫视",
+        "url": "http://112.27.235.94:8000/hls/34/index.m3u8"
+      },
+      {
         "name": "山西卫视",
         "url": "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8"
-      },
-      {
-        "name": "山西卫视",
-        "url": "http://112.27.235.94:8000/hls/45/index.m3u8"
-      },
-      {
-        "name": "陕西卫视",
-        "url": "http://112.27.235.94:8000/hls/43/index.m3u8"
       },
       {
         "name": "上海卫视",
@@ -575,11 +723,11 @@
       },
       {
         "name": "深圳卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://183.11.239.36:808/hls/45/index.m3u8"
       },
       {
         "name": "深圳卫视",
-        "url": "http://182.150.23.74:808/hls/20/index.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "深圳卫视",
@@ -602,12 +750,8 @@
         "url": "http://61.136.172.236:9901/tsfile/live/0123_1.m3u8"
       },
       {
-        "name": "天津卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
-      {
-        "name": "天津卫视",
-        "url": "http://124.116.183.146:9901/tsfile/live/0135_1.m3u8"
+        "name": "四川卫视",
+        "url": "http://112.27.235.94:8000/hls/35/index.m3u8"
       },
       {
         "name": "天津卫视",
@@ -619,7 +763,11 @@
       },
       {
         "name": "天津卫视",
-        "url": "http://125.42.150.240:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://123.163.114.168:85/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "天津卫视",
+        "url": "http://125.42.151.116:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "西藏卫视",
@@ -631,7 +779,7 @@
       },
       {
         "name": "新疆卫视",
-        "url": "http://123.163.114.168:85/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://183.11.239.36:808/hls/65/index.m3u8"
       },
       {
         "name": "新疆卫视",
@@ -639,15 +787,7 @@
       },
       {
         "name": "新疆卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
-      {
-        "name": "新疆卫视",
-        "url": "http://183.11.239.36:808/hls/65/index.m3u8"
-      },
-      {
-        "name": "延边卫视",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#"
+        "url": "http://123.163.114.168:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "延边卫视",
@@ -655,19 +795,23 @@
       },
       {
         "name": "延边卫视",
+        "url": "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#"
+      },
+      {
+        "name": "延边卫视",
         "url": "http://gmxw.7766.org:808/hls/15/index.m3u8"
       },
       {
         "name": "云南卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0119_1.m3u8"
+        "url": "http://123.163.114.168:85/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "云南卫视",
-        "url": "http://123.163.114.168:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "url": "http://59.39.89.130:60901/tsfile/live/0125_18.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "浙江卫视",
-        "url": "http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8"
+        "url": "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8"
       },
       {
         "name": "浙江卫视",
@@ -675,11 +819,19 @@
       },
       {
         "name": "重庆卫视",
+        "url": "http://61.136.172.236:9901/tsfile/live/0142_1.m3u8"
+      },
+      {
+        "name": "重庆卫视",
         "url": "http://123.163.114.168:85/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "重庆卫视",
-        "url": "http://61.136.172.236:9901/tsfile/live/0142_1.m3u8"
+        "url": "http://123.130.84.106:8154/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0"
+      },
+      {
+        "name": "重庆卫视",
+        "url": "http://183.11.239.36:808/hls/53/index.m3u8"
       },
       {
         "name": "安多卫视",
@@ -695,11 +847,11 @@
       },
       {
         "name": "黑龙江卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0143_1.m3u8"
+        "url": "http://61.136.172.236:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
-        "name": "内蒙古卫视",
-        "url": "http://cssbyd.imwork.net:8082/hls/44/index.m3u8"
+        "name": "黑龙江卫视",
+        "url": "http://183.11.239.36:808/hls/48/index.m3u8"
       },
       {
         "name": "内蒙古卫视",
@@ -707,11 +859,11 @@
       },
       {
         "name": "内蒙古卫视",
-        "url": "http://123.130.84.106:8154/tsfile/live/0109_1.m3u8"
+        "url": "http://cssbyd.imwork.net:8082/hls/44/index.m3u8"
       },
       {
         "name": "内蒙古卫视",
-        "url": "http://112.27.235.94:8000/hls/49/index.m3u8"
+        "url": "http://183.11.239.36:808/hls/60/index.m3u8"
       },
       {
         "name": "山东教育",
@@ -793,15 +945,23 @@
       },
       {
         "name": "浙江教科影视",
-        "url": "http://ali-vl.cztv.com/channels/lantian/channel004/360p.m3u8"
-      },
-      {
-        "name": "浙江教科影视",
         "url": "http://ali-xwl.cztv.com/live/channel04720Plxw.m3u8"
       },
       {
-        "name": "电影八点档",
-        "url": "http://live.metshop.top/huya/880261?cdn=alicdn"
+        "name": "浙江教科影视",
+        "url": "http://ali-vl.cztv.com/channels/lantian/channel004/360p.m3u8"
+      },
+      {
+        "name": "热门港剧",
+        "url": "http://www.goodiptv.club/douyu/5522351"
+      },
+      {
+        "name": "电影丧尸片",
+        "url": "http://live.metshop.top/huya/21059578?cdn=alicdn"
+      },
+      {
+        "name": "电影功夫片",
+        "url": "http://live.metshop.top/huya/11352941?cdn=alicdn"
       },
       {
         "name": "电影动作电影",
@@ -812,32 +972,24 @@
         "url": "http://live.metshop.top/huya/11336587?cdn=alicdn"
       },
       {
-        "name": "电影嫣然影厅",
-        "url": "http://live.metshop.top/huya/11601977?cdn=alicdn"
-      },
-      {
-        "name": "电影犯罪片",
-        "url": "http://live.metshop.top/huya/11352974?cdn=alicdn"
-      },
-      {
-        "name": "电影谍战",
-        "url": "http://live.metshop.top/huya/21059585?cdn=alicdn"
+        "name": "电影梁家辉",
+        "url": "http://live.metshop.top/huya/11342429?cdn=alicdn"
       },
       {
         "name": "电影谍战片",
         "url": "http://live.metshop.top/huya/21059587?cdn=alicdn"
       },
       {
-        "name": "电影贺岁",
-        "url": "http://live.metshop.top/huya/11601971?cdn=alicdn"
-      },
-      {
-        "name": "电影高分动作",
-        "url": "http://live.metshop.top/huya/11352884?cdn=alicdn"
-      },
-      {
         "name": "美亚电影",
         "url": "http://zjrtv.vip/live/?tbs=mydy"
+      },
+      {
+        "name": "贝爷求生",
+        "url": "http://www.goodiptv.club/douyu/9661369"
+      },
+      {
+        "name": "邵氏影院",
+        "url": "http://www.goodiptv.club/douyu/4246519"
       },
       {
         "name": "韩国电影1",
@@ -869,19 +1021,11 @@
       },
       {
         "name": "金鹰卡通",
-        "url": "http://101.66.198.163:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0"
+        "url": "http://183.11.239.36:808/hls/69/index.m3u8"
       },
       {
         "name": "金鹰卡通",
-        "url": "http://101.66.198.115:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0"
-      },
-      {
-        "name": "金鹰卡通",
-        "url": "http://101.66.198.8:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0"
-      },
-      {
-        "name": "金鹰卡通",
-        "url": "http://101.66.199.247:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0"
+        "url": "http://125.42.151.116:9901/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "金鹰卡通",
@@ -898,6 +1042,10 @@
       {
         "name": "七龙珠",
         "url": "https://live.metshop.top/huya/11601966"
+      },
+      {
+        "name": "中华小当家",
+        "url": "https://live.metshop.top/huya/11342413"
       },
       {
         "name": "海绵宝宝",
@@ -987,7 +1135,7 @@
       },
       {
         "name": "云和新闻综合",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8"
       },
       {
         "name": "云霄综合",
@@ -996,6 +1144,10 @@
       {
         "name": "井研综合",
         "url": "http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8"
+      },
+      {
+        "name": "亳州农村",
+        "url": "http://zbbf2.ahbztv.com/live/418.m3u8"
       },
       {
         "name": "仁寿综合",
@@ -1019,15 +1171,15 @@
       },
       {
         "name": "余姚姚江文化",
-        "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed"
       },
       {
         "name": "余姚新闻综合",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
       },
       {
         "name": "余姚综合",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?"
+        "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
       },
       {
         "name": "余杭未来E",
@@ -1098,6 +1250,10 @@
         "url": "http://jrlive.jrntv.com/live/_definst_/yingshis/chunklist_w1994429382.m3u8?zjiangsd"
       },
       {
+        "name": "句容生活",
+        "url": "http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]"
+      },
+      {
         "name": "可克达拉综合",
         "url": "http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8"
       },
@@ -1155,7 +1311,7 @@
       },
       {
         "name": "太谷新闻综合",
-        "url": "https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0"
+        "url": "https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0"
       },
       {
         "name": "奎屯哈萨克语",
@@ -1179,7 +1335,7 @@
       },
       {
         "name": "嵊泗综合",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXshengsi1/720p.m3u8"
       },
       {
         "name": "平泉综合",
@@ -1194,8 +1350,8 @@
         "url": "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8"
       },
       {
-        "name": "平遥新闻综合",
-        "url": "https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd"
+        "name": "广东民生",
+        "url": "http://183.11.239.36:808/hls/18/index.m3u8"
       },
       {
         "name": "广元公共",
@@ -1215,7 +1371,7 @@
       },
       {
         "name": "广州综合",
-        "url": "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488"
+        "url": "http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8"
       },
       {
         "name": "广德生活",
@@ -1239,7 +1395,7 @@
       },
       {
         "name": "开化国家公园",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8"
       },
       {
         "name": "开化新闻综合",
@@ -1271,7 +1427,7 @@
       },
       {
         "name": "文成综合",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed?"
       },
       {
         "name": "新昌新闻综合",
@@ -1399,23 +1555,15 @@
       },
       {
         "name": "河北农民",
-        "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd"
+        "url": "https://ls.qingting.fm/live/1650/64k.m3u8"
       },
       {
         "name": "河北农民",
-        "url": "https://ls.qingting.fm/live/1650/64k.m3u8"
+        "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd"
       },
       {
         "name": "河北都市",
         "url": "https://radio.pull.hebtv.com/live/hebnczx.m3u8"
-      },
-      {
-        "name": "河源公共",
-        "url": "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8"
-      },
-      {
-        "name": "河源综合",
-        "url": "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       },
       {
         "name": "泸县新闻综合",
@@ -1451,7 +1599,7 @@
       },
       {
         "name": "浙江国际",
-        "url": "http://ali-xwl.cztv.com/live/channel10720Plxw.m3u8"
+        "url": "http://ali-vl.cztv.com/channels/lantian/channel010/360p.m3u8"
       },
       {
         "name": "浙江教科",
@@ -1474,6 +1622,10 @@
         "url": "http://ali-xwl.cztv.com/live/channel07720Plxw.m3u8"
       },
       {
+        "name": "浙江新闻",
+        "url": "http://ali-vl.cztv.com/channels/lantian/channel007/360p.m3u8"
+      },
+      {
         "name": "浙江民生",
         "url": "http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8"
       },
@@ -1483,11 +1635,11 @@
       },
       {
         "name": "浙江民生休闲",
-        "url": "http://ali-xwl.cztv.com/live/channel06720Plxw.m3u8"
+        "url": "http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8"
       },
       {
         "name": "浙江民生休闲",
-        "url": "http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8"
+        "url": "http://ali-xwl.cztv.com/live/channel061080Plxw.m3u8"
       },
       {
         "name": "浙江生活",
@@ -1499,7 +1651,7 @@
       },
       {
         "name": "浙江经济",
-        "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?"
+        "url": "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8"
       },
       {
         "name": "浙江经济生活",
@@ -1507,7 +1659,11 @@
       },
       {
         "name": "浙江经济生活",
-        "url": "http://ali-xwl.cztv.com/live/channel03720Plxw.m3u8"
+        "url": "http://ali-vl.cztv.com/channels/lantian/channel003/360p.m3u8"
+      },
+      {
+        "name": "浙江经济生活",
+        "url": "http://ali-xwl.cztv.com/live/channel031080Plxw.m3u8"
       },
       {
         "name": "浙江经视",
@@ -1527,7 +1683,7 @@
       },
       {
         "name": "浙江钱江都市",
-        "url": "http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8"
+        "url": "http://ali-xwl.cztv.com/live/channel02720Plxw.m3u8"
       },
       {
         "name": "浙江钱江频道",
@@ -1595,7 +1751,7 @@
       },
       {
         "name": "白银综合",
-        "url": "https://play.kankanlive.com/live/1720408089419110.m3u8"
+        "url": "http://play.kankanlive.com/live/1720408089419110.m3u8"
       },
       {
         "name": "磐石综合",
@@ -1612,10 +1768,6 @@
       {
         "name": "福建新闻",
         "url": "http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8"
-      },
-      {
-        "name": "福建旅游",
-        "url": "https://live.264788.xyz/channel/fujianlvyou?streamid=8f26765ebf367079cef58c6b7752da1e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       },
       {
         "name": "福建经济",
@@ -1695,7 +1847,7 @@
       },
       {
         "name": "萧山生活",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed"
+        "url": "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?"
       },
       {
         "name": "萧山综合",
@@ -1731,7 +1883,7 @@
       },
       {
         "name": "诸暨新闻综合",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed"
+        "url": "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
       },
       {
         "name": "象山新闻综合",
@@ -1810,10 +1962,6 @@
         "url": "http://zjtv-wshls.homecdn.com/live/2aa16.m3u8"
       },
       {
-        "name": "镇江新闻综合",
-        "url": "http://cm-wshls.homecdn.com/live/2aa50.m3u8"
-      },
-      {
         "name": "长子综合",
         "url": "https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd"
       },
@@ -1879,7 +2027,7 @@
       },
       {
         "name": "黄山新闻综合",
-        "url": "http://hslive.hsnewsnet.com/lsdream/hve9Wjs/1000/live.m3u8?zanhd"
+        "url": "http://hslive.hsnewsnet.com/lsdream/hve9Wjs/1000/live.m3u8"
       },
       {
         "name": "黑龙江新闻",
@@ -1899,17 +2047,17 @@
       },
       {
         "name": "龙游生活娱乐",
-        "url": "http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8?zzhed"
+        "url": "https://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8"
       }
     ],
     "纪录频道": [
       {
         "name": "CGTN纪录",
-        "url": "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8"
+        "url": "https://0472.org/hls/cgtnd.m3u8"
       },
       {
         "name": "CGTN纪录",
-        "url": "https://0472.org/hls/cgtnd.m3u8"
+        "url": "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8"
       },
       {
         "name": "航拍中国第二季",
@@ -2020,10 +2168,6 @@
       {
         "name": "精品体育",
         "url": "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8"
-      },
-      {
-        "name": "广东体育",
-        "url": "https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8"
       },
       {
         "name": "纬来体育",
