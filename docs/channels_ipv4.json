@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-12 23:55:43",
-  "total": 497,
+  "updated": "2026-10-13 04:19:15",
+  "total": 483,
   "categories": {
     "央视频道": [
       {
@@ -312,10 +312,6 @@
         "url": "http://hls.nntv.cn/nnlive/YSYL_244.m3u8"
       },
       {
-        "name": "古天乐电影",
-        "url": "https://live.metshop.top/huya/29982675"
-      },
-      {
         "name": "周星驰电影",
         "url": "https://live.metshop.top/huya/11342412"
       },
@@ -344,10 +340,6 @@
         "url": "https://live.metshop.top/huya/29465848"
       },
       {
-        "name": "封神榜",
-        "url": "https://live.metshop.top/huya/29465849"
-      },
-      {
         "name": "射雕英雄传",
         "url": "https://live.metshop.top/huya/23824164"
       },
@@ -366,10 +358,6 @@
       {
         "name": "战争电影",
         "url": "https://live.metshop.top/huya/21059574"
-      },
-      {
-        "name": "扫黄先锋",
-        "url": "https://live.metshop.top/huya/29465855"
       },
       {
         "name": "无心法师",
@@ -398,10 +386,6 @@
       {
         "name": "沈腾电影",
         "url": "https://live.metshop.top/huya/11601968"
-      },
-      {
-        "name": "法政先锋",
-        "url": "https://live.metshop.top/huya/23863804"
       },
       {
         "name": "洗冤录",
@@ -440,10 +424,6 @@
         "url": "http://live.metshop.top/huya/21059578?cdn=alicdn"
       },
       {
-        "name": "电影八点档",
-        "url": "http://live.metshop.top/huya/880261?cdn=alicdn"
-      },
-      {
         "name": "电影刘德华",
         "url": "http://live.metshop.top/huya/11342424?cdn=alicdn"
       },
@@ -462,10 +442,6 @@
       {
         "name": "电影喜剧专场",
         "url": "http://live.metshop.top/huya/11602044?cdn=alicdn"
-      },
-      {
-        "name": "电影嫣然影厅",
-        "url": "http://live.metshop.top/huya/11601977?cdn=alicdn"
       },
       {
         "name": "电影战争片",
@@ -504,10 +480,6 @@
         "url": "http://live.metshop.top/huya/11352884?cdn=alicdn"
       },
       {
-        "name": "笑傲江湖",
-        "url": "https://live.metshop.top/huya/23865142"
-      },
-      {
         "name": "罪犯电影",
         "url": "https://live.metshop.top/huya/11352962"
       },
@@ -540,20 +512,12 @@
         "url": "https://live.metshop.top/huya/23903183"
       },
       {
-        "name": "陀枪师姐",
-        "url": "https://live.metshop.top/huya/29465857"
-      },
-      {
         "name": "韩国电影1",
         "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=595"
       },
       {
         "name": "韩国电影2",
         "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=743"
-      },
-      {
-        "name": "黄渤电影",
-        "url": "https://live.metshop.top/huya/11352876"
       },
       {
         "name": "龙祥电影",
@@ -698,12 +662,12 @@
         "url": "http://110.153.180.106:55555/out_2/index.m3u8"
       },
       {
-        "name": "余姚姚江文化",
-        "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
-      },
-      {
         "name": "余姚新闻综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
+      },
+      {
+        "name": "余姚综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
       },
       {
         "name": "余杭未来E",
@@ -734,10 +698,6 @@
         "url": "http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl="
       },
       {
-        "name": "剑阁综合",
-        "url": "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8"
-      },
-      {
         "name": "北京新闻",
         "url": "https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8"
       },
@@ -756,6 +716,10 @@
       {
         "name": "双辽综合",
         "url": "http://stream3.jlntv.cn:80/aac_slgb/playlist.m3u8"
+      },
+      {
+        "name": "古县综合",
+        "url": "https://l2fpdktp.live.sxmty.com/live/hls/e4c3b363cc4549788e2d983f403e07db/d99ce1eb686e41b9afc888110bd95aa7.m3u8?zshanxd"
       },
       {
         "name": "句容党建",
@@ -838,6 +802,10 @@
         "url": "http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8"
       },
       {
+        "name": "定襄综合",
+        "url": "http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd"
+      },
+      {
         "name": "山东新闻",
         "url": "http://ls.qingting.fm/live/60180.m3u8"
       },
@@ -868,14 +836,6 @@
       {
         "name": "广东民生",
         "url": "http://183.11.239.36:808/hls/18/index.m3u8"
-      },
-      {
-        "name": "广元公共",
-        "url": "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8"
-      },
-      {
-        "name": "广元综合",
-        "url": "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
       },
       {
         "name": "广安公共",
@@ -930,6 +890,10 @@
         "url": "http://stream11.jlntv.cn/dehuitv/sd/live.m3u8"
       },
       {
+        "name": "怀仁综合",
+        "url": "https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8"
+      },
+      {
         "name": "敦化一套",
         "url": "http://stream8.jlntv.cn/dhtv/playlist.m3u8"
       },
@@ -972,10 +936,6 @@
       {
         "name": "晋江电视台",
         "url": "http://stream.jinjiang.tv/1/sd/live.m3u8?zfud"
-      },
-      {
-        "name": "朝天综合",
-        "url": "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel104601/playlist.m3u8"
       },
       {
         "name": "来宾综合",
@@ -1036,6 +996,10 @@
       {
         "name": "汶川新闻综合",
         "url": "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#rtmp://tv.mcrm.org.cn:1935/channellive/tv01"
+      },
+      {
+        "name": "汾西综合",
+        "url": "https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd"
       },
       {
         "name": "沐川综合",
@@ -1274,10 +1238,6 @@
         "url": "http://stream8.jlntv.cn/shulan/sd/live.m3u8?_upt=332db6421699196585"
       },
       {
-        "name": "苍南新闻综合",
-        "url": "https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8"
-      },
-      {
         "name": "苏州文化生活",
         "url": "https://live-auth.51kandianshi.com/szgd/csztv3.m3u8"
       },
@@ -1306,8 +1266,8 @@
         "url": "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8"
       },
       {
-        "name": "萧山生活",
-        "url": "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8"
+        "name": "萧山新闻综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8"
       },
       {
         "name": "萧山综合",
@@ -1332,10 +1292,6 @@
       {
         "name": "西峰综合",
         "url": "https://play.kankanlive.com/live/1683944827526991.m3u8"
-      },
-      {
-        "name": "诸暨新闻综合",
-        "url": "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
       },
       {
         "name": "象山新闻综合",
@@ -1410,12 +1366,12 @@
         "url": "http://zjtv-wshls.homecdn.com/live/2aa16.m3u8"
       },
       {
-        "name": "长子综合",
-        "url": "https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd"
+        "name": "镇江新闻综合",
+        "url": "http://cm-wshls.homecdn.com/live/2aa50.m3u8"
       },
       {
-        "name": "长影频道",
-        "url": "http://tpc.x3322.net:9901/tsfile/live/1010_1.m3u8"
+        "name": "长子综合",
+        "url": "https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd"
       },
       {
         "name": "长沙新闻综合",
@@ -1468,10 +1424,6 @@
       {
         "name": "龙泉新闻综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8"
-      },
-      {
-        "name": "龙游新闻综合",
-        "url": "https://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8"
       }
     ],
     "纪录频道": [
@@ -1586,10 +1538,6 @@
     ],
     "体育频道": [
       {
-        "name": "精品体育",
-        "url": "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8"
-      },
-      {
         "name": "足球频道",
         "url": "https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8"
       },
@@ -1698,10 +1646,6 @@
       {
         "name": "2018年春晚",
         "url": "https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTRfNDAzMDAxOTlfOTI4OTY2ODE2MTBfMF8z_b_B11a778e34390a21de42d407e94f45b91.mp4"
-      },
-      {
-        "name": "2024年春晚",
-        "url": "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8"
       }
     ],
     "直播中国": [
