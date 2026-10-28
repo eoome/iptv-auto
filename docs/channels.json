@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-28 17:34:13",
-  "total": 367,
+  "updated": "2026-10-28 21:59:08",
+  "total": 364,
   "categories": {
     "央视频道": [
       {
@@ -626,14 +626,6 @@
         "url": "https://ls.qingting.fm/live/20198/64k.m3u8"
       },
       {
-        "name": "武进新闻",
-        "url": "https://live.wjyanghu.com/live/CH1.m3u8"
-      },
-      {
-        "name": "武进生活",
-        "url": "http://live.wjyanghu.com/live/CH2.m3u8"
-      },
-      {
         "name": "永嘉新闻综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXyongjia1/720p.m3u8"
       },
@@ -660,10 +652,6 @@
       {
         "name": "河北都市",
         "url": "https://radio.pull.hebtv.com/live/hebnczx.m3u8"
-      },
-      {
-        "name": "泸县新闻综合",
-        "url": "https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8"
       },
       {
         "name": "洞头综合",
@@ -732,10 +720,6 @@
       {
         "name": "浙江经济",
         "url": "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
-      },
-      {
-        "name": "浙江经济生活",
-        "url": "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
       },
       {
         "name": "浙江经济生活",
@@ -988,6 +972,10 @@
       {
         "name": "铜陵新闻综合",
         "url": "https://ls.qingting.fm/live/21303/64k.m3u8"
+      },
+      {
+        "name": "镇江二套社会民生",
+        "url": "http://zjtv-wshls.homecdn.com/live/2aa16.m3u8"
       },
       {
         "name": "镇江新闻综合",
