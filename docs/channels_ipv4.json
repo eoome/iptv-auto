@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-03 22:39:48",
-  "total": 261,
+  "updated": "2026-11-04 03:43:27",
+  "total": 278,
   "categories": {
     "央视频道": [
       {
@@ -41,10 +41,6 @@
       }
     ],
     "卫视频道": [
-      {
-        "name": "东方卫视",
-        "url": "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8"
-      },
       {
         "name": "东南卫视",
         "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
@@ -116,10 +112,6 @@
       {
         "name": "人间卫视",
         "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8"
-      },
-      {
-        "name": "东方卫视4K",
-        "url": "https://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
       }
     ],
     "电影频道": [
@@ -134,9 +126,17 @@
       {
         "name": "南宁影视娱乐",
         "url": "http://hls.nntv.cn/nnlive/YSYL_244.m3u8"
+      },
+      {
+        "name": "浙江教科影视",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
       }
     ],
     "儿童频道": [
+      {
+        "name": "浙江少儿",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8"
+      },
       {
         "name": "七龙珠",
         "url": "https://live.metshop.top/huya/11601966"
@@ -252,8 +252,16 @@
         "url": "http://110.153.180.106:55555/out_2/index.m3u8"
       },
       {
+        "name": "余姚姚江文化",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
+      },
+      {
         "name": "余姚新闻综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
+      },
+      {
+        "name": "余姚综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
       },
       {
         "name": "余杭未来E",
@@ -314,10 +322,6 @@
       {
         "name": "句容影院",
         "url": "http://jrlive.jrntv.com/live/_definst_/yingshis/chunklist_w1994429382.m3u8?zjiangsd"
-      },
-      {
-        "name": "句容生活",
-        "url": "http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]"
       },
       {
         "name": "可克达拉综合",
@@ -412,10 +416,6 @@
         "url": "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8"
       },
       {
-        "name": "平遥新闻综合",
-        "url": "https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd"
-      },
-      {
         "name": "广东民生",
         "url": "http://183.11.239.36:808/hls/18/index.m3u8"
       },
@@ -488,6 +488,10 @@
         "url": "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed"
       },
       {
+        "name": "新昌新闻综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8"
+      },
+      {
         "name": "新昌生活",
         "url": "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
       },
@@ -512,12 +516,12 @@
         "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8"
       },
       {
-        "name": "易门综合",
-        "url": "https://zb-live.ynurl.com/yimen/3b75a2f9-7941-46b7-992d-a9796fbca5fe.m3u8"
-      },
-      {
         "name": "晋江电视台",
         "url": "http://stream.jinjiang.tv/1/sd/live.m3u8?zfud"
+      },
+      {
+        "name": "普陀电视台",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8"
       },
       {
         "name": "来宾综合",
@@ -612,6 +616,14 @@
         "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8"
       },
       {
+        "name": "浙江公共新闻",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8"
+      },
+      {
+        "name": "浙江国际",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8"
+      },
+      {
         "name": "浙江教科",
         "url": "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
       },
@@ -632,6 +644,14 @@
         "url": "http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8"
       },
       {
+        "name": "浙江民生",
+        "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
+      },
+      {
+        "name": "浙江民生休闲",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
+      },
+      {
         "name": "浙江生活",
         "url": "http://ls.qingting.fm/live/1099.m3u8"
       },
@@ -648,12 +668,24 @@
         "url": "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
       },
       {
+        "name": "浙江经视",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
+      },
+      {
         "name": "浙江遂昌",
         "url": "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8"
       },
       {
         "name": "浙江钱江",
         "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
+      },
+      {
+        "name": "浙江钱江",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?"
+      },
+      {
+        "name": "浙江钱江都市",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8"
       },
       {
         "name": "浙江钱江都市",
@@ -674,6 +706,18 @@
       {
         "name": "渭源新闻",
         "url": "http://play.kankanlive.com/live/1720408280309109.m3u8"
+      },
+      {
+        "name": "湖州公共民生",
+        "url": "http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e"
+      },
+      {
+        "name": "湖州文化娱乐",
+        "url": "http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887"
+      },
+      {
+        "name": "湖州新闻综合",
+        "url": "http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865"
       },
       {
         "name": "滦平新闻",
@@ -752,6 +796,10 @@
         "url": "http://stream8.jlntv.cn/shulan/sd/live.m3u8?_upt=332db6421699196585"
       },
       {
+        "name": "苍南新闻综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8"
+      },
+      {
         "name": "苏州4k",
         "url": "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8"
       },
@@ -780,6 +828,14 @@
         "url": "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8"
       },
       {
+        "name": "萧山新闻综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8"
+      },
+      {
+        "name": "萧山生活",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8"
+      },
+      {
         "name": "萧山综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8"
       },
@@ -804,6 +860,10 @@
         "url": "https://play.kankanlive.com/live/1683944827526991.m3u8"
       },
       {
+        "name": "诸暨新闻综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
+      },
+      {
         "name": "象山综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8"
       },
@@ -822,10 +882,6 @@
       {
         "name": "通化县综合",
         "url": "http://stream3.jlntv.cn:80/aac_thxgb/playlist.m3u8"
-      },
-      {
-        "name": "通海电视台",
-        "url": "https://zb-live.ynurl.com/tonghai/3bfe3a9e-48e6-4c1e-8770-1df66447cc6c.m3u8"
       },
       {
         "name": "遂昌综合",
@@ -938,6 +994,14 @@
       {
         "name": "龙泉新闻综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8"
+      },
+      {
+        "name": "龙游新闻综合",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8"
+      },
+      {
+        "name": "龙游生活娱乐",
+        "url": "https://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8"
       }
     ],
     "纪录频道": [
@@ -956,6 +1020,10 @@
       {
         "name": "中国村庄",
         "url": "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/93fc12dbf14241c18c23da104fbade23/4000.m3u8"
+      },
+      {
+        "name": "之江纪录",
+        "url": "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8"
       },
       {
         "name": "九台",
