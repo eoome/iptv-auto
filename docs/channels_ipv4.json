@@ -1,12 +1,8 @@
 {
-  "updated": "2026-11-05 22:58:59",
-  "total": 32,
+  "updated": "2026-11-06 03:58:50",
+  "total": 30,
   "categories": {
     "央视频道": [
-      {
-        "name": "CCTV3",
-        "url": "http://222.169.85.8:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
       {
         "name": "CCTV8",
         "url": "http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0"
@@ -48,10 +44,6 @@
       {
         "name": "东南卫视",
         "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
-      },
-      {
-        "name": "广东卫视",
-        "url": "http://222.169.85.8:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "湖南卫视",
