@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06 22:29:12",
+  "updated": "2026-11-07 03:34:57",
   "total": 202,
   "categories": {
     "央视频道": [
@@ -334,10 +334,6 @@
         "url": "http://stream11.jlntv.cn/dehuitv/sd/live.m3u8"
       },
       {
-        "name": "怀仁综合",
-        "url": "https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8"
-      },
-      {
         "name": "敦化一套",
         "url": "http://stream8.jlntv.cn/dhtv/playlist.m3u8"
       },
@@ -450,6 +446,10 @@
         "url": "https://radio.pull.hebtv.com/live/hebnczx.m3u8"
       },
       {
+        "name": "泸县新闻综合",
+        "url": "https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8"
+      },
+      {
         "name": "洞头综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8"
       },
@@ -520,10 +520,6 @@
       {
         "name": "浙江钱江",
         "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
-      },
-      {
-        "name": "浙江钱江都市",
-        "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8"
       },
       {
         "name": "海南新闻",
@@ -740,6 +736,10 @@
       {
         "name": "金川新闻综合",
         "url": "http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd"
+      },
+      {
+        "name": "铜梁综合",
+        "url": "http://183.64.174.171:40123/ch1.m3u8?zzhongqd"
       },
       {
         "name": "铜陵新闻综合",
