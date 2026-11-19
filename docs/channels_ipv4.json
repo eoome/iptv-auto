@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-18 23:40:15",
-  "total": 330,
+  "updated": "2026-11-19 04:53:04",
+  "total": 322,
   "categories": {
     "央视频道": [
       {
@@ -83,10 +83,6 @@
       },
       {
         "name": "江西卫视",
-        "url": "http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
-      },
-      {
-        "name": "江西卫视",
         "url": "https://live.264788.xyz/channel/jiangxiweishi?streamid=555198f31caa33506ac6abb70d788959&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       },
       {
@@ -116,10 +112,6 @@
       {
         "name": "西藏卫视",
         "url": "https://live.264788.xyz/channel/xizangweishi?streamid=4b4e8ea919f1cfd5e43deed1d1675251&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
-      },
-      {
-        "name": "西藏卫视",
-        "url": "http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0"
       },
       {
         "name": "新疆卫视",
@@ -578,10 +570,6 @@
         "url": "https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8"
       },
       {
-        "name": "兵团五师双河新闻综合",
-        "url": "http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl="
-      },
-      {
         "name": "南京教科",
         "url": "http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8"
       },
@@ -656,10 +644,6 @@
       {
         "name": "奎屯哈萨克语",
         "url": "http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd"
-      },
-      {
-        "name": "定襄综合",
-        "url": "http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd"
       },
       {
         "name": "嵊州新闻综合",
@@ -774,10 +758,6 @@
         "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8"
       },
       {
-        "name": "易门综合",
-        "url": "https://zb-live.ynurl.com/yimen/3b75a2f9-7941-46b7-992d-a9796fbca5fe.m3u8"
-      },
-      {
         "name": "晋江电视台",
         "url": "http://stream.jinjiang.tv/1/sd/live.m3u8?zfud"
       },
@@ -846,10 +826,6 @@
         "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd"
       },
       {
-        "name": "泸县新闻综合",
-        "url": "https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8"
-      },
-      {
         "name": "洞头综合",
         "url": "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8"
       },
@@ -904,10 +880,6 @@
       {
         "name": "浙江民生休闲",
         "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
-      },
-      {
-        "name": "浙江留学",
-        "url": "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
       },
       {
         "name": "浙江经济",
@@ -1190,10 +1162,6 @@
       {
         "name": "九台",
         "url": "http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8?zjild"
-      },
-      {
-        "name": "兵团五师双河影",
-        "url": "https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd"
       },
       {
         "name": "双辽",
